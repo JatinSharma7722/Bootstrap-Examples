@@ -1,0 +1,87 @@
+<html>
+<head>
+	          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	   </head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">PHC Publication House</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Novels
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Fictitious</a></li>
+          <li><a href="#">Suspense</a></li>
+          <li><a href="#">Romantic</a></li>
+        </ul>
+      </li>
+    </ul>
+	<button class="btn btn-success navbar-btn">Awards<span class="label label-primary">30</span></button>
+	<ul class="nav navbar-nav navbar-right">
+      <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+  <h3>PHC Publication House</h3>
+  <p>Answer the following quiz and get a chance to win free subscription of limited books:</p>
+</div>
+<div class="container-fluid">
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="name" class="form-control" id="name" name="name">
+    </div>
+	<div class="form-group">
+      <label for="email">Email Id:</label>
+      <input type="email" class="form-control" id="email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="comment">Address:</label>
+      <textarea type="comment" class="form-control" rows="3" id="comment" name="comment"></textarea>
+    </div>
+	<p><h5><b>What kinds of books you like?</b></h5></p>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Fictitious</label>
+    </div>
+	<div class="checkbox">
+      <label><input type="checkbox" value="">Suspense</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Romantic</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" disabled>Sci-Fi</label>
+    </div>
+	<b>Please mention your age:</b>
+	<label class="radio-inline">
+      <input type="radio" name="optradio">Less then 18
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">19-30
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Above 30
+    </label>
+    <button type="submit" class="btn btn-info btn-block">Submit</button>
+  </form>
+</div>
+</body>
+</html>

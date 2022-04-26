@@ -1,0 +1,17 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+$("div").animate({
+opacity:'0.5',height:'150px',width:'150px',background:'hotpink'},"slow");
+});
+});
+</script>
+</head>
+<body>
+<button>Start Animation</button>
+<div style="background:green;height:50px;width:50px;"></div>
+</body>
+</html>
